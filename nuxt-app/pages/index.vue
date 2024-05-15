@@ -306,7 +306,7 @@ const navigation = [
     </div>
   </section>
   <section>
-    <div class="py-16 bg-gray-100">
+    <div class="py-16 bg-white">
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-gray-800 text-4xl font-extrabold text-center mb-8">
           Benefícios da Plataforma
@@ -345,55 +345,30 @@ const navigation = [
       </div>
     </div>
   </section>
-  <section class="py-12 bg-gray-900 rounded-tl-full">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">
+  <section class="py-12 rounded-tl-full bg-gray-900 sm:py-16 lg:py-20">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <h2 class="text-white text-4xl font-extrabold text-center">
         Operadoras Disponíveis
       </h2>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Operadora 1 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">Operadora A</h3>
-          <p class="text-gray-600">Descrição da Operadora A.</p>
-          <button
-            class="mt-4 w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
-          >
-            Agendar com Operadora A
-          </button>
-        </div>
-
-        <!-- Operadora 2 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">Operadora B</h3>
-          <p class="text-gray-600">Descrição da Operadora B.</p>
-          <button
-            class="mt-4 w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
-          >
-            Agendar com Operadora B
-          </button>
-        </div>
-
-        <!-- Operadora 3 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">Operadora C</h3>
-          <p class="text-gray-600">Descrição da Operadora C.</p>
-          <button
-            class="mt-4 w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
-          >
-            Agendar com Operadora C
-          </button>
-        </div>
-
-        <!-- Operadora 4 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">Operadora D</h3>
-          <p class="text-gray-600">Descrição da Operadora D.</p>
-          <button
-            class="mt-4 w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
-          >
-            Agendar com Operadora D
-          </button>
+      <div class="flex justify-center">
+        <div
+          class="grid justify-center items-center grid-cols-1 mt-5 gap-y-6 sm:grid-cols-2 sm:gap-y-8 lg:grid-cols-3 lg:gap-x-8"
+        >
+          <img
+            class="object-contain w-auto mx-auto h-40"
+            src="/static/img/AfricellLogo.png"
+            alt="Africell Logo"
+          />
+          <img
+            class="object-contain w-auto mx-auto h-20"
+            src="/static/img/unitel-logo.png"
+            alt="Unitel Logo"
+          />
+          <img
+            class="object-contain w-auto mx-auto h-40"
+            src="/static/img/movicel-logo.png"
+            alt="Movicel Logo"
+          />
         </div>
       </div>
     </div>
