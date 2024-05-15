@@ -12,32 +12,36 @@ import {
   InboxIcon,
   QuestionMarkCircleIcon,
   XMarkIcon,
+  ClockIcon,
+  FunnelIcon,
+  CheckBadgeIcon,
+  FaceSmileIcon,
 } from "@heroicons/vue/24/outline";
 import { ChevronDownIcon } from "@heroicons/vue/20/solid";
 const features = [
   {
     name: "Redução do tempo de espera",
     description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
-    icon: ChevronDownIcon,
+      " FilaZero permite que os clientes agendem atendimentos prévios, reduzindo significativamente o tempo de espera.",
+    icon: ClockIcon,
   },
   {
     name: "Aumento da eficiência das operadoras",
     description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
-    icon: ChevronDownIcon,
+      "Com menos clientes esperando nas filas das lojas, as operadoras podem melhorar sua eficiência no atendimento.",
+    icon: FunnelIcon,
   },
   {
     name: "Facilidade de acesso aos serviços",
     description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
-    icon: ChevronDownIcon,
+      "Ao agendar atendimentos com antecedência, os clientes podem ter um acesso mais conveniente aos serviços de telecomunicações.",
+    icon: CheckBadgeIcon,
   },
   {
     name: "Melhoria da satisfação do cliente",
     description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
-    icon: ChevronDownIcon,
+      "Com um processo de atendimento mais rápido e conveniente, os clientes  experimentarão uma melhoria significativa na satisfação do cliente.",
+    icon: FaceSmileIcon,
   },
 ];
 const solutions = [
@@ -320,7 +324,7 @@ const navigation = [
               :key="feature.name"
               class="relative pl-16"
             >
-              <dt class="text-base font-semibold leading-7 text-gray-900">
+              <dt class="text-lg font-extrabold leading-7 text-gray-900">
                 <div
                   class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
                 >
