@@ -49,7 +49,7 @@ const navigation = [
 ];
 </script>
 <template>
-  <section class="bg-white dark:bg-gray-900">
+  <section class="bg-white dark:bg-gray-900 rounded-br-full">
     <div class="bg-white">
       <header>
         <Popover class="relative bg-white">
