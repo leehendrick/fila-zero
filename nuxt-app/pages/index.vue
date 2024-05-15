@@ -345,4 +345,57 @@ const navigation = [
       </div>
     </div>
   </section>
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">
+        Operadoras Disponíveis
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Operadora 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Operadora A</h3>
+          <p class="text-gray-600">Descrição da Operadora A.</p>
+          <button
+            class="mt-4 w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
+          >
+            Agendar com Operadora A
+          </button>
+        </div>
+
+        <!-- Operadora 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Operadora B</h3>
+          <p class="text-gray-600">Descrição da Operadora B.</p>
+          <button
+            class="mt-4 w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
+          >
+            Agendar com Operadora B
+          </button>
+        </div>
+
+        <!-- Operadora 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Operadora C</h3>
+          <p class="text-gray-600">Descrição da Operadora C.</p>
+          <button
+            class="mt-4 w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
+          >
+            Agendar com Operadora C
+          </button>
+        </div>
+
+        <!-- Operadora 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Operadora D</h3>
+          <p class="text-gray-600">Descrição da Operadora D.</p>
+          <button
+            class="mt-4 w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
+          >
+            Agendar com Operadora D
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
