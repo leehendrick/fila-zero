@@ -326,7 +326,7 @@ const navigation = [
             >
               <dt class="text-lg font-extrabold leading-7 text-gray-900">
                 <div
-                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-900"
                 >
                   <component
                     :is="feature.icon"
