@@ -345,7 +345,7 @@ const navigation = [
       </div>
     </div>
   </section>
-  <section class="py-12 bg-gray-100">
+  <section class="py-12 bg-gray-900 rounded-tl-full">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-8">
         Operadoras Disponíveis
