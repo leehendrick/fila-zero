@@ -14,7 +14,32 @@ import {
   XMarkIcon,
 } from "@heroicons/vue/24/outline";
 import { ChevronDownIcon } from "@heroicons/vue/20/solid";
-
+const features = [
+  {
+    name: "Push to deploy",
+    description:
+      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+    icon: ChevronDownIcon,
+  },
+  {
+    name: "SSL certificates",
+    description:
+      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+    icon: ChevronDownIcon,
+  },
+  {
+    name: "Simple queues",
+    description:
+      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+    icon: ChevronDownIcon,
+  },
+  {
+    name: "Advanced security",
+    description:
+      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+    icon: ChevronDownIcon,
+  },
+];
 const solutions = [
   {
     name: "Inbox",
@@ -284,6 +309,34 @@ const navigation = [
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Cada benefício será adicionado aqui -->
+          <!-- Feature section -->
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl
+            class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+          >
+            <div
+              v-for="feature in features"
+              :key="feature.name"
+              class="relative pl-16"
+            >
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+                >
+                  <component
+                    :is="feature.icon"
+                    class="h-6 w-6 text-white"
+                    aria-hidden="true"
+                  />
+                </div>
+                {{ feature.name }}
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                {{ feature.description }}
+              </dd>
+            </div>
+          </dl>
         </div>
       </div>
     </div>
