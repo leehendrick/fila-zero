@@ -58,12 +58,9 @@ const navigation = [
           >
             <div class="flex justify-start lg:w-0 lg:flex-1">
               <a href="#">
-                <span class="sr-only">Your Company</span>
-                <img
-                  class="h-8 w-auto sm:h-10"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
+                <h1 class="text-4xl font-bold text-blue-500">
+                  Fila<span class="text-gray-800">Zero</span>
+                </h1>
               </a>
             </div>
             <div class="-my-2 -mr-2 md:hidden">
@@ -271,9 +268,9 @@ const navigation = [
         </p>
         <a
           href="#"
-          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-full hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
         >
-          Speak to Sales
+          Saber mais
         </a>
       </div>
       <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
