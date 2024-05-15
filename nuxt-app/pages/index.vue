@@ -155,7 +155,7 @@ const navigation = [
               >
               <a
                 href="#"
-                class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-blue-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-blue-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-800"
                 >Sign up</a
               >
             </div>
@@ -179,11 +179,9 @@ const navigation = [
                 <div class="px-5 pb-6 pt-5">
                   <div class="flex items-center justify-between">
                     <div>
-                      <img
-                        class="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                        alt="Your Company"
-                      />
+                      <h1 class="text-4xl font-bold text-blue-500">
+                        Fila<span class="text-gray-800">Zero</span>
+                      </h1>
                     </div>
                     <div class="-mr-2">
                       <PopoverButton
@@ -275,6 +273,18 @@ const navigation = [
       </div>
       <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
         <img src="/static/img/calendar.png" alt="mockup" />
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-gray-800 text-4xl font-extrabold text-center mb-8">
+          Benefícios da Plataforma
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Cada benefício será adicionado aqui -->
+        </div>
       </div>
     </div>
   </section>
