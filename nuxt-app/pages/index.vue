@@ -16,25 +16,25 @@ import {
 import { ChevronDownIcon } from "@heroicons/vue/20/solid";
 const features = [
   {
-    name: "Push to deploy",
+    name: "Redução do tempo de espera",
     description:
       "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
     icon: ChevronDownIcon,
   },
   {
-    name: "SSL certificates",
+    name: "Aumento da eficiência das operadoras",
     description:
       "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
     icon: ChevronDownIcon,
   },
   {
-    name: "Simple queues",
+    name: "Facilidade de acesso aos serviços",
     description:
       "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
     icon: ChevronDownIcon,
   },
   {
-    name: "Advanced security",
+    name: "Melhoria da satisfação do cliente",
     description:
       "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
     icon: ChevronDownIcon,
@@ -280,7 +280,7 @@ const navigation = [
         <h1
           class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
         >
-          Agende atendimentos sem filas em lojas
+          Agende atendimentos sem filas em lojas de operadoras
         </h1>
         <p
           class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
