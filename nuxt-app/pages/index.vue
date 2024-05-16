@@ -18,6 +18,11 @@ import {
   FaceSmileIcon,
 } from "@heroicons/vue/24/outline";
 import { ChevronDownIcon } from "@heroicons/vue/20/solid";
+import { onMounted, onBeforeUnmount } from "vue";
+import Rellax from "rellax";
+
+const parallaxRef = ref(null);
+
 const features = [
   {
     name: "Redução do tempo de espera",
@@ -76,6 +81,21 @@ const navigation = [
   { name: "Partners", href: "#" },
   { name: "Company", href: "#" },
 ];
+
+onMounted(() => {
+  const rellax = new Rellax(parallaxRef.value, {
+    speed: -2,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false,
+  });
+});
+
+onBeforeUnmount(() => {
+  rellax.destroy();
+});
 </script>
 <template>
   <section class="bg-white dark:bg-gray-900 rounded-br-full">
@@ -309,7 +329,10 @@ const navigation = [
     <div class="py-16 bg-white">
       <div class="max-w-6xl mx-auto px-4">
         <div class="p-5 border-b-2 border-gray-900 w-auto">
-          <h2 class="text-gray-800 text-4xl font-extrabold text-center mb-8">
+          <h2
+            ref="parallax"
+            class="text-gray-800 text-4xl font-extrabold text-center mb-8"
+          >
             Benefícios da Plataforma
           </h2>
         </div>
