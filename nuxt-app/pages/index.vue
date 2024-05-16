@@ -53,26 +53,25 @@ const features = [
 const solutions = [
   {
     name: "Agendar",
-    description:
-      "Get a better understanding of where your traffic is coming from.",
+    description: "Agende qualquer serviço disponível.",
     href: "#",
     icon: CalendarDaysIcon,
   },
   {
     name: "Ver Lojas",
-    description: "Speak directly to your customers in a more meaningful way.",
+    description: "Procure lojas perto de si, disponíveis para agendamentos.",
     href: "#",
     icon: BuildingStorefrontIcon,
   },
   {
     name: "Consultar",
-    description: "Your customers' data will be safe and secure.",
+    description: "Consulte informações sobre serviços.",
     href: "#",
     icon: EyeIcon,
   },
   {
     name: "Reclamações",
-    description: "Connect with third-party tools that you're already using.",
+    description: "Faça suas reclamações.",
     href: "#",
     icon: FaceFrownIcon,
   },
