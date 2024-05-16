@@ -74,13 +74,13 @@ const solutions = [
   },
 ];
 const navigation = [
-  { name: "Pricing", href: "#" },
-  { name: "Partners", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Página Inicial", href: "#" },
+  { name: "Sobre Nós", href: "#" },
+  { name: "Contatos", href: "#" },
 ];
 </script>
 <template>
-  <section class="bg-white dark:bg-gray-900 rounded-br-full">
+  <header class="bg-white dark:bg-gray-900 rounded-br-full">
     <div class="bg-white">
       <header>
         <Popover class="relative bg-white">
@@ -111,7 +111,7 @@ const navigation = [
                     'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2',
                   ]"
                 >
-                  <span>Solutions</span>
+                  <span>Serviços</span>
                   <ChevronDownIcon
                     :class="[
                       open ? 'text-gray-600' : 'text-gray-400',
@@ -306,7 +306,7 @@ const navigation = [
         <img src="/static/img/calendar.png" alt="mockup" />
       </div>
     </div>
-  </section>
+  </header>
   <section>
     <div class="py-16 bg-white">
       <div class="max-w-6xl mx-auto px-4">
