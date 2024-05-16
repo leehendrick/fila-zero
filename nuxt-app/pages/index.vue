@@ -100,7 +100,7 @@ const navigation = [
             </div>
             <div class="-my-2 -mr-2 md:hidden">
               <PopoverButton
-                class="relative inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                class="relative inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500"
               >
                 <span class="absolute -inset-0.5" />
                 <span class="sr-only">Open menu</span>
@@ -112,7 +112,7 @@ const navigation = [
                 <PopoverButton
                   :class="[
                     open ? 'text-gray-900' : 'text-gray-500',
-                    'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2',
+                    'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 ',
                   ]"
                 >
                   <span>Serviços</span>
@@ -149,7 +149,7 @@ const navigation = [
                           class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                         >
                           <div
-                            class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-600 text-white sm:h-12 sm:w-12"
+                            class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gray-900 text-white sm:h-12 sm:w-12"
                           >
                             <component
                               :is="item.icon"
