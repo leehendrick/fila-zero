@@ -112,7 +112,7 @@ const navigation = [
                 <PopoverButton
                   :class="[
                     open ? 'text-gray-900' : 'text-gray-500',
-                    'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 ',
+                    'group inline-flex items-center rounded-md bg-white text-lg font-extrabold hover:text-gray-900 ',
                   ]"
                 >
                   <span>Serviços</span>
@@ -176,7 +176,7 @@ const navigation = [
                 v-for="item in navigation"
                 :key="item.name"
                 :href="item.href"
-                class="text-base font-medium text-gray-500 hover:text-gray-900"
+                class="text-lg font-extrabold text-gray-500 hover:text-gray-900"
                 >{{ item.name }}</a
               >
             </PopoverGroup>
