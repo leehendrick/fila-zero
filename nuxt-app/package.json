@@ -20,5 +20,8 @@
     "vue": "^3.4.27",
     "vue-parallax-js": "^0.2.3",
     "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "sass": "^1.77.1"
   }
 }
