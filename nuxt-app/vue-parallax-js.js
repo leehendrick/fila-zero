@@ -1,6 +1,7 @@
+
 import Vue from 'vue'
 import VueParallaxJs from 'vue-parallax-js'
 
-export default () => {
+export default defineNuxtPlugin((nuxtApp) => {
   Vue.use(VueParallaxJs)
-}
+})
