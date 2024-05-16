@@ -18,10 +18,7 @@ import {
   FaceSmileIcon,
 } from "@heroicons/vue/24/outline";
 import { ChevronDownIcon } from "@heroicons/vue/20/solid";
-import { onMounted, onBeforeUnmount } from "vue";
-import Rellax from "rellax";
-
-const parallaxRef = ref(null);
+import { ref, onMounted, onBeforeUnmount } from "vue";
 
 const features = [
   {
@@ -81,21 +78,6 @@ const navigation = [
   { name: "Partners", href: "#" },
   { name: "Company", href: "#" },
 ];
-
-onMounted(() => {
-  const rellax = new Rellax(parallaxRef.value, {
-    speed: -2,
-    center: true,
-    wrapper: null,
-    round: true,
-    vertical: true,
-    horizontal: false,
-  });
-});
-
-onBeforeUnmount(() => {
-  rellax.destroy();
-});
 </script>
 <template>
   <section class="bg-white dark:bg-gray-900 rounded-br-full">
@@ -330,43 +312,42 @@ onBeforeUnmount(() => {
       <div class="max-w-6xl mx-auto px-4">
         <div class="p-5 border-b-2 border-gray-900 w-auto">
           <h2
-            ref="parallax"
-            class="text-gray-800 text-4xl font-extrabold text-center mb-8"
+            class="parallax-text text-gray-800 text-4xl font-extrabold text-center mb-8"
           >
             Benefícios da Plataforma
           </h2>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Cada benefício será adicionado aqui -->
-          <!-- Feature section -->
-        </div>
-        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl
-            class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Cada benefício será adicionado aqui -->
+        <!-- Feature section -->
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl
+          class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+        >
+          <div
+            v-for="feature in features"
+            :key="feature.name"
+            class="relative pl-16"
           >
-            <div
-              v-for="feature in features"
-              :key="feature.name"
-              class="relative pl-16"
-            >
-              <dt class="text-lg font-extrabold leading-7 text-gray-900">
-                <div
-                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-900"
-                >
-                  <component
-                    :is="feature.icon"
-                    class="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </div>
-                {{ feature.name }}
-              </dt>
-              <dd class="mt-2 text-base leading-7 text-gray-600">
-                {{ feature.description }}
-              </dd>
-            </div>
-          </dl>
-        </div>
+            <dt class="text-lg font-extrabold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-900"
+              >
+                <component
+                  :is="feature.icon"
+                  class="h-6 w-6 text-white"
+                  aria-hidden="true"
+                />
+              </div>
+              {{ feature.name }}
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              {{ feature.description }}
+            </dd>
+          </div>
+        </dl>
       </div>
     </div>
   </section>
