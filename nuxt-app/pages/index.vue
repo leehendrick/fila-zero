@@ -308,9 +308,11 @@ const navigation = [
   <section>
     <div class="py-16 bg-white">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-gray-800 text-4xl font-extrabold text-center mb-8">
-          Benefícios da Plataforma
-        </h2>
+        <div class="p-5 border-b-2 border-gary-900 w-auto">
+          <h2 class="text-gray-800 text-4xl font-extrabold text-center mb-8">
+            Benefícios da Plataforma
+          </h2>
+        </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Cada benefício será adicionado aqui -->
           <!-- Feature section -->
