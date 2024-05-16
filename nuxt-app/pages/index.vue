@@ -16,6 +16,10 @@ import {
   FunnelIcon,
   CheckBadgeIcon,
   FaceSmileIcon,
+  CalendarDaysIcon,
+  BuildingStorefrontIcon,
+  EyeIcon,
+  FaceFrownIcon,
 } from "@heroicons/vue/24/outline";
 import { ChevronDownIcon } from "@heroicons/vue/20/solid";
 import { ref, onMounted, onBeforeUnmount } from "vue";
@@ -48,29 +52,29 @@ const features = [
 ];
 const solutions = [
   {
-    name: "Inbox",
+    name: "Agendar",
     description:
       "Get a better understanding of where your traffic is coming from.",
     href: "#",
-    icon: InboxIcon,
+    icon: CalendarDaysIcon,
   },
   {
-    name: "Messaging",
+    name: "Ver Lojas",
     description: "Speak directly to your customers in a more meaningful way.",
     href: "#",
-    icon: ChatBubbleBottomCenterTextIcon,
+    icon: BuildingStorefrontIcon,
   },
   {
-    name: "Live Chat",
+    name: "Consultar",
     description: "Your customers' data will be safe and secure.",
     href: "#",
-    icon: ChatBubbleLeftRightIcon,
+    icon: EyeIcon,
   },
   {
-    name: "Knowledge Base",
+    name: "Reclamações",
     description: "Connect with third-party tools that you're already using.",
     href: "#",
-    icon: QuestionMarkCircleIcon,
+    icon: FaceFrownIcon,
   },
 ];
 const navigation = [
